@@ -1,0 +1,222 @@
+<! DOCTYPE html>
+<html lang=¨fr¨>
+<head>
+   <meta charset=¨UTF-8¨>
+   <meta name=¨viewport¨
+   content=¨width=device-width,initial-scale=1.0¨>
+   <title>Faculté des Sciences et Technologies</title>
+   
+   <style>
+      /* STYLE GENERAL */
+	  * {
+	      box-sizing: border-box;
+		}
+	  body {
+	    margin: 0;
+		font-family: Arial, sans-serif;
+		background-color: #f4f7fb;
+		color: #263238;
+		line-height: 1.6;
+	  }
+	  
+	  /* EN-TETE /*
+	  header {
+	    background-color: #123c69;
+		color: white;
+		text-align: center;
+		padding: 30px 15px;
+	  }
+	  
+	  header h1 {
+	    margin: 0;
+	  }
+	  
+	  /* MENU */
+	  nav {
+	      background-color: #082747;
+		  padding: 15px;
+		  text-align: center;
+	  }
+	  
+	  nav a {
+	     color: white;
+		 text-decoration: none;
+		 margin: 10px;
+		 font-weight: bold;
+	  }
+	  
+	  nav a:hover {
+	     color: #ffd166;
+	  }
+	  
+	  /* CONTENU */
+	  section {
+	     padding: 30px 7%;
+		 scroll-margin-top: 10px;
+	  }
+	  
+	  h2 {
+	     color: #123c69;
+		 text-align: center;
+	  }
+	  
+	  /* CARTES DES SCIENTIFIQUES */
+	   .galerie {
+	      display: flex;
+		  flex-wrap: wrap;
+		  justify-content: center;
+		  gap: 20px;
+		}
+		
+	   .carte {
+		   background-color: white;
+		   width: 280px;
+		   padding: 20px;
+		   border-radius: 10px;
+		   box-shadow: 0 2px 8px #cccccc;
+		   text-align: center;
+		}
+		
+		.carte img {
+		   width: 100%
+		   height: 180px;
+		   object-fit: cover;
+		   border-radius: 8px;
+		}
+		
+	  /* TABLEAU */
+	    table { 
+		   width: 100%;
+		   border-collapse: collapse;
+		   background-color: white;
+		}
+		
+		th, td {
+		   border:v 1px solid #cccccc;
+		   padding: 12px;
+		   text-align: left;
+		}
+		
+		th { 
+		   background-color: #123c69;
+		   color: white;
+		}
+		
+	  /* PIED DE PAGE */
+	    footer {
+		   background-color: #082747;
+		   color: white;
+		   text-align: center;
+		   padding: 20px;
+		}
+		
+	  /* ADAPTATION TELEPHONE */
+	    @media (max-width: 600px) {
+		   nav a {
+		      display: block;
+			  mardin: 8px;
+		   }
+			
+		   section {
+		      padding: 20px 5%;
+		   }
+		   
+		   table {
+		     font-size: 13px;
+		   }
+		}
+	</style>
+</head>
+
+ <body>
+ 
+    <! EN-TETE >
+	<header>
+	   <h1>Faculté des Sciences et Technologies</h1>
+	   <p>De l'Héritage Scientifique aux Formations de Demain</p>
+	   <p>Année universitaire 2025-2026</p>
+	</header>
+	
+	<! MENU DE NAVIGATION >
+	<nav>
+	    <a href=¨#acceuil¨>Acceuil</a>
+		<a href=¨#scientifiques¨>Scientifiques</a>
+		<a href=¨#formations¨>Formations</a>
+		<a href=¨#administration¨>Administration</a>
+		<a href=¨#contact¨>Contact</a>
+	</nav>
+	
+	<! ACCEUIL >
+	<section id=¨acceuil¨>
+	   <h2>Bienvenue sur notre portail</h2>
+	   
+	   <p>
+	       Bienvenue sur le portail de la Faculté des Sciences et Technologies. Ce site présente l'histoire des grands scientifiques.
+	   </p>
+	</section>
+	
+	<! EXPOSITION SCIENTIFIQUE >
+	<section id=¨scientifiques¨>
+	    <h2>Exposition scientifique</h2>
+		
+		<div class=¨galérie¨>
+		   
+		   <div clas=¨carte¨>
+		      <img src=¨https://placehold.co/400x250?TEXT=Alan+Turing¨ alt=¨Portail illustratif d'Alan Turing¨>
+			  
+			     <h3>Alan Turing</h3>
+				 
+				 <p>
+				    Mathématicien britannique, il a contribué aux fondements théoriques de l'informatique et à la cryptanalyse.
+				 </p>
+		   </div>	
+		
+		   <div class=¨carte¨>
+		       <img src=¨https://placehold.co/400x250?text=Ada+Lovelace¨ alt=¨Portail illustratif d'Ada Lovelace¨> 
+			      
+				  <h3>Ada Lovelace</h3>
+				  
+				  <p>
+				     Pionnère de la programmation informatique, elle a écrit un algorithme destiné à la machine analytique de Charles Babbage.
+				  </p>
+			</div>
+			
+			<div class=¨carte¨>
+			    <img src=¨https://placehold.co/400x250?text=Isaac+Newton¨ alt=¨Portail illustratif d'Isaac Newton¨>
+				
+				   <h3>Isaac Newton</h3>
+				   
+				   <p>
+				      Mathématicien et physicien, il a contribué au développement du calcul différentiel et intégral.
+				   </p>
+			</div>	 
+
+			<div class=¨carte¨>
+			    <img src=¨https://placehold.co/400x250?text=Grace+Hopper¨ alt=¨Portail illustratif de Grace Hopper¨>
+				
+				    <h3>Grace Hopper</h3>
+					
+					<p>
+					   Programmation informatique, informaticienne américaine. Elle a contribué au développement des compilateurs et à l'évolution des langages de programmation, notamment COBOL.
+					</p>
+			</div>	
+		
+		</div>
+	</section>	
+	
+	<! PIED DE PAGE >
+	<footer>
+	    <p>
+		   2025-2026 - Faculté des Sciences et Technologies
+		</p>  
+		<p>Projet réalisé par les étudiants de L2 MIA</p>
+	</footer>
+
+</body>	
+</html>
+	
+		   
+	
+	
+			
+	  
